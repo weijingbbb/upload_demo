@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { RouterLink, useRouter } from 'vue-router';
+import { RouterLink, } from 'vue-router';
 import Upload from './components/upload.vue';
 import { Roles, useUserStore } from './stores/userStore';
 
-
-const router = useRouter()
 const user = useUserStore()
 const router_link = ref([
   { to: '/', name: '主页'},

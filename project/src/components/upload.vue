@@ -50,7 +50,7 @@ const createChunks = (file: File) => {
 const calculateHash = (chunks: Blob[]) => {
  return new Promise((resolve) => {
    // 存储计算的切片
-   const targets: Blob[] = []
+  const targets: Blob[] = []
   const spark = new SparkMd5.ArrayBuffer()
   const fileReader = new FileReader()
 
